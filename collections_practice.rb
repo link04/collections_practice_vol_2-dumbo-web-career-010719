@@ -56,14 +56,13 @@ def find_cool(array_of_hashes)
 end
   
 
-def organize_schools(schools)
+def organize_schools(hash_of_schools)
   organized_schools = {}
-  schools.each do |name, hash|
+  hash_of_schools.collect do |name, hash|
     location = hash[:location]
     organized_schools[location] ||= []
     organized_schools[location] << name
   end
-  organized_schools
 end
   
   
