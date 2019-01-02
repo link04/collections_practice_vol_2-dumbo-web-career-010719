@@ -56,9 +56,7 @@ def find_cool(array_of_hashes)
 end
   
 def organize_schools(hash_of_schools)
-  hash_of_schools.group_by {|key.to_s, value| value[:location] }.each do |key1, value1|
-      
-    end
+  hash_of_schools.group_by {|key, value| value[:location] }
 end
   
   
