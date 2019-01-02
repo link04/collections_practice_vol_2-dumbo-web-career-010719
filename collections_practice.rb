@@ -57,11 +57,10 @@ end
   
 
 def organize_schools(schools)
-  organized_schools = {}
-  schools.each do |name, hash|
+organized_schools = {}
+schools.each do |name, hash|
   location = hash[:location]
   organized_schools[location] ||= []
-  puts name
   organized_schools[location] << name
 end
  organized_schools
