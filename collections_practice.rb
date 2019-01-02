@@ -63,6 +63,7 @@ def organize_schools(hash_of_schools)
     organized_schools[location] ||= []
     organized_schools[location] << name
   end
+  organized_schools
 end
   
   
