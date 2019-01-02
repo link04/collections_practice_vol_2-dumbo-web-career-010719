@@ -55,6 +55,7 @@ def find_cool(array_of_hashes)
   end
 end
   
+
 def organize_schools(schools)
   organized_schools = {}
   schools.each do |name, hash|
@@ -62,6 +63,8 @@ def organize_schools(schools)
   organized_schools[location] ||= []
   puts name
   organized_schools[location] << name
+end
+ organized_schools
 end
   
   
