@@ -58,7 +58,7 @@ end
 def organize_schools(hash_of_schools)
   hash_of_schools.group_by do |key, value|
     value[:location]
-  end
+  end.value
 end
   
   
